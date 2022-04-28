@@ -24,10 +24,10 @@ class RunBinSh(object):
 def import_urlib_version(version):
     exec("import urllib%s as urllib" % version)
 
-"""@app.route('/')
+@app.route('/')
 def index():
     module = flask.request.args.get("module")
     import_urlib_version(module)
 
 
-print(base64.b64encode(pickle.dumps(RunBinSh())))"""
+print(base64.b64encode(pickle.dumps(RunBinSh())))
